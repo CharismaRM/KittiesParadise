@@ -6,7 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230418124304">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css?_v=20230420184535" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css?_v=20230420184535" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230420184535">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +18,21 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
+				<a data-goto=".main" data-goto-header href="#" class="header__logo"></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-goto=".aboutyou" data-goto-header class="menu__item"><a href="#" class="menu__link">О тебе</a>
+							</li>
+							<li data-goto=".dream" data-goto-header class="menu__item"><a href="#" class="menu__link">Доход</a></li>
+							<li data-goto=".advantages" data-goto-header class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
+							<li data-goto=".reviews" data-goto-header class="menu__item"><a href="#" class="menu__link">Отзывы </a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<main class="page">
@@ -159,12 +176,13 @@
 											</div>
 										</div>
 									</div>
-									<!-- Если нужна навигация (влево/вправо) -->
-									<div class="dream__nav">
-										<button type="button" class="swiper-button-prev"><picture><source srcset="img/arrow-left.webp" type="image/webp"><img src="img/arrow-left.png" alt=""></picture></button>
-										<button type="button" class="swiper-button-next"><picture><source srcset="img/arrow-right.webp" type="image/webp"><img src="img/arrow-right.png" alt=""></picture></button>
-									</div>
 
+
+								</div>
+								<!-- Если нужна навигация (влево/вправо) -->
+								<div class="dream__nav">
+									<button type="button" class="swiper-button-prev _icon-arrow-left"></button>
+									<button type="button" class="swiper-button-next _icon-arrow-right"></button>
 								</div>
 
 							</div>
@@ -227,10 +245,10 @@
 							<p>Более 4000 довольных моделей </p>
 							<p>Вот отзывы некоторых из них:</p>
 						</div>
-						<div class="dream__slider swiper">
-							<!-- Двигающееся часть слайдера -->
+						<!-- <div class="dream__slider swiper">
+							
 							<div class="dream__wrapper swiper-wrapper">
-								<!-- Слайд -->
+								
 								<div class="dream__slide swiper-slide">
 									<div class="reviews__image">
 										<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.png" alt="dream"></picture>
@@ -262,10 +280,26 @@
 									</div>
 								</div>
 							</div>
-							<!-- Если нужна навигация (влево/вправо) -->
+							
 							<div class="dream__nav">
 								<button type="button" class="swiper-button-prev"><picture><source srcset="img/arrow-left.webp" type="image/webp"><img src="img/arrow-left.png" alt=""></picture></button>
-								<button type="button" class="swiper-button-next"><picture><source srcset="img/arrow-right.webp" type="image/webp"><img src="img/arrow-right.png" alt=""></picture></button>
+								<button type="button" class="swiper-button-next"><img src="img/arrow-right.png"
+										alt=""></button>
+							</div>
+
+						</div> -->
+						<div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+							<div class="carousel__slide" data-src="img/reviews/1.png" data-fancybox="gallery">
+								<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.png" /></picture>
+							</div>
+							<div class="carousel__slide" data-src="img/reviews/2.png" data-fancybox="gallery">
+								<picture><source srcset="img/reviews/2.webp" type="image/webp"><img src="img/reviews/2.png" /></picture>
+							</div>
+							<div class="carousel__slide" data-src="img/reviews/3.png" data-fancybox="gallery">
+								<picture><source srcset="img/reviews/3.webp" type="image/webp"><img src="img/reviews/3.png" /></picture>
+							</div>
+							<div class="carousel__slide" data-src="img/reviews/4.png" data-fancybox="gallery">
+								<picture><source srcset="img/reviews/4.webp" type="image/webp"><img src="img/reviews/4.png" /></picture>
 							</div>
 
 						</div>
@@ -275,6 +309,27 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__description">
+
+					<p class="footer__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis,
+						aspernatur quisquam doloribus dolores sapiente voluptas ratione quis consequuntur fugit?</p>
+					<p class="footer__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis,
+						aspernatur quisquam doloribus dolores sapiente voluptas ratione quis consequuntur fugit?</p>
+
+					<p class="footer__text text">© 2023 Cats Paradise - Все права защищены .</p>
+
+
+
+				</div>
+				<div class="footer__sociale">
+					<ul class="footer__list">
+						<li class="footer__item"><a href="" class="footer__link _icon-insta"></a></li>
+						<!-- <li class="footer__item"><a href="" class="footer__link _icon-git"></a></li> -->
+						<li class="footer__item"><a href="" class="footer__link _icon-mail"></a></li>
+						<li class="footer__item"><a href="" class="footer__link _icon-telegram"></a></li>
+					</ul>
+				</div>
+
 			</div>
 		</footer>
 	</div>
@@ -288,7 +343,11 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230418124304"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230420184535"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js?_v=20230420184535"></script> -->
+
+
+	<script src="js/app.min.js?_v=20230420184535"></script>
 </body>
 
 </html>

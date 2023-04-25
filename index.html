@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css?_v=20230420184535" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css?_v=20230420184535" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230420184535">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css?_v=20230425155828" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css?_v=20230425155828" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230425155828">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,10 +23,13 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
+							<li data-goto=".advantages" data-goto-header class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
+							<li data-goto=".dream" data-goto-header class="menu__item"><a href="#" class="menu__link">Доход</a></li>
+
 							<li data-goto=".aboutyou" data-goto-header class="menu__item"><a href="#" class="menu__link">О тебе</a>
 							</li>
-							<li data-goto=".dream" data-goto-header class="menu__item"><a href="#" class="menu__link">Доход</a></li>
-							<li data-goto=".advantages" data-goto-header class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
+							<li data-goto=".interior" data-goto-header class="menu__item"><a href="#" class="menu__link">Интерьеры</a></li>
+
 							<li data-goto=".reviews" data-goto-header class="menu__item"><a href="#" class="menu__link">Отзывы </a>
 							</li>
 
@@ -49,76 +52,83 @@
 							Самая продуктивная студия Краснодара. <br>
 							Сделана моделями для моделей.
 						</div>
-						<div class="main__btns">
+						<!-- <div class="main__btns">
 							<a href="" class="main__btn btn animate">
 								Записаться на чай
 							</a>
 							<a href="" class="main__btn btn">
 								Контакты
 							</a>
+						</div> -->
+						<div class=" main__btns btns">
+							<a data-popup="#popup" class="blue-btn flicker-4" href="#">Записаться на чай</a>
+							<a class="pink-btn" href="#" data-goto=".footer" data-goto-header>Контакты</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="page__aboutyou aboutyou">
-				<div class="aboutyou__container">
-					<div class="aboutyou__body">
-						<h2 class="aboutyou__title title">
-							Мы очень ждем именно тебя!
-						</h2>
-						<div class="aboutyou__subtitle text">
-							Наша команда искренне считает, что каждая из девушек абсолютно прекрасна!
+			<section class="page__advantages advantages">
+				<div class="advantages__container">
+					<div class="advantages__body">
+						<h2 data-watch-once data-watch class="advantages__title title">Наши преимущества</h2>
+						<div class="advantages__items">
+							<div class="advantages__item">
+								<div class="advantages__icon"></div>
+								<div class="advantages__subtitle">Настоящие профессионалы</div>
+								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
+									для большого зароботка!</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon"></div>
+								<div class="advantages__subtitle">Настоящие профессионалы</div>
+								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
+									для большого зароботка!</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon"></div>
+								<div class="advantages__subtitle">Настоящие профессионалы</div>
+								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
+									для большого зароботка!</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon"></div>
+								<div class="advantages__subtitle">Настоящие профессионалы</div>
+								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
+									для большого зароботка!</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon"></div>
+								<div class="advantages__subtitle">Настоящие профессионалы</div>
+								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
+									для большого зароботка!</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon"></div>
+								<div class="advantages__subtitle">Настоящие профессионалы</div>
+								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
+									для большого зароботка!</div>
+							</div>
 						</div>
-						<div class="aboutyou__text text">
-							Поэтому мы ждем тебя в гости, если:
-						</div>
-						<ul class="aboutyou__list">
-							<div class="aboutyou__item">
-								<div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div>
-								<div class="aboutyou__text aboutyou__text_left text">Ты целеустремленная и готова зарабатывать
-									большие суммы</div>
-							</div>
-							<div class="aboutyou__item">
-								<div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div>
-								<div class="aboutyou__text aboutyou__text_left text">тебе от 18 до 30 лет</div>
-							</div>
-							<div class="aboutyou__item">
-								<div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div>
-								<div class="aboutyou__text aboutyou__text_left text">Ты ответсвенная и есть желание развиваться
-								</div>
-							</div>
-							<div class="aboutyou__item">
-								<div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div>
-								<div class="aboutyou__text aboutyou__text_left text">Успеешь совмещать работу с учебой</div>
-							</div>
-							<div class="aboutyou__item">
-								<div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div>
-								<div class="aboutyou__text aboutyou__text_left text">Lorem ipsum dolor sit amet.</div>
-							</div>
-							<div class="aboutyou__item">
-								<div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div>
-								<div class="aboutyou__text aboutyou__text_left text">Lorem ipsum dolor sit amet.</div>
-							</div>
-						</ul>
-						<a href="" class="aboutyou__btn btn">Начать зарабатывать</a>
 					</div>
 				</div>
 			</section>
 			<section class="page__dream dream">
 				<div class="dream__container">
 					<div class="dream__body">
-						<h2 class="dream__title title">
+						<h2 data-watch-once data-watch class="dream__title title">
 							Про доход
 						</h2>
-						<div class="dream__earnings text">
+						<div data-watch-once data-watch class="dream__earnings text">
 							Наши модели зарабатывают от 60 тысяч не имея опыта работы <br>
 							В среднем модель с опытом зарабатыват 300.000 р <br><span>(И мы готовы это доказать!)</span>
 						</div>
 						<div class="dream__payments">
-							<div class="dream__payment text">Зарплата каждые 2 недели на руки. При необходимости в первые
-								стримы
-								действует ежедневные выплаты </div>
-							<div class="dream__payment text">Присутствует система авансов!</div>
+							<div data-watch-once data-watch class="dream__payment text dream__payment_left">Зарплата каждые 2
+								недели на руки. </div>
+							<div data-watch-once data-watch class="dream__payment text dream__payment_center"> В первые
+								стримы ежедневные выплаты </div>
+							<div data-watch-once data-watch class="dream__payment text dream__payment_right">Присутствует
+								система авансов!</div>
 						</div>
 						<div class="dream__real">
 							<div class="dream__subtitle title">
@@ -189,165 +199,202 @@
 						</div>
 					</div>
 			</section>
-			<section class="page__advantages advantages">
-				<div class="advantages__container">
-					<div class="advantages__body">
-						<h2 class="advantages__title title">Наши преимущества</h2>
-						<div class="advantages__items">
-							<div class="advantages__item">
-								<div class="advantages__icon"></div>
-								<div class="advantages__subtitle">Настоящие профессионалы</div>
-								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
-									для большого зароботка!</div>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__icon"></div>
-								<div class="advantages__subtitle">Настоящие профессионалы</div>
-								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
-									для большого зароботка!</div>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__icon"></div>
-								<div class="advantages__subtitle">Настоящие профессионалы</div>
-								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
-									для большого зароботка!</div>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__icon"></div>
-								<div class="advantages__subtitle">Настоящие профессионалы</div>
-								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
-									для большого зароботка!</div>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__icon"></div>
-								<div class="advantages__subtitle">Настоящие профессионалы</div>
-								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
-									для большого зароботка!</div>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__icon"></div>
-								<div class="advantages__subtitle">Настоящие профессионалы</div>
-								<div class="advantages__text text">Только опытные сотрудники, которые научат тебя всем фишкам
-									для большого зароботка!</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__reviews reviews">
-				<div class="reviews__container">
-					<div class="reviews__body">
-						<h2 class="reviews__title title">
-							Наши модели
+			<section class="page__aboutyou aboutyou">
+				<div class="aboutyou__container">
+					<div class="aboutyou__body ">
+						<h2 data-watch-once data-watch class="aboutyou__title title ">
+							Мы очень ждем именно тебя!
 						</h2>
-						<div class="reviews__text text">Отзывы наших моделей</div>
-						<div class="reviews__subtitle">
-							<p>Более 4000 довольных моделей </p>
-							<p>Вот отзывы некоторых из них:</p>
+						<div data-watch-once data-watch class="aboutyou__subtitle text">
+							Наша команда искренне считает, что каждая из девушек абсолютно прекрасна!
 						</div>
-						<!-- <div class="dream__slider swiper">
-							
-							<div class="dream__wrapper swiper-wrapper">
-								
-								<div class="dream__slide swiper-slide">
-									<div class="reviews__image">
-										<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.png" alt="dream"></picture>
-									</div>
-								</div>
-								<div class="dream__slide swiper-slide">
-									<div class="reviews__image">
-										<picture><source srcset="img/reviews/2.webp" type="image/webp"><img src="img/reviews/2.png" alt="dream"></picture>
-									</div>
-								</div>
-								<div class="dream__slide swiper-slide">
-									<div class="reviews__image">
-										<picture><source srcset="img/reviews/3.webp" type="image/webp"><img src="img/reviews/3.png" alt="dream"></picture>
-									</div>
-								</div>
-								<div class="dream__slide swiper-slide">
-									<div class="reviews__image">
-										<picture><source srcset="img/reviews/4.webp" type="image/webp"><img src="img/reviews/4.png" alt="dream"></picture>
-									</div>
-								</div>
-								<div class="dream__slide swiper-slide">
-									<div class="reviews__image">
-										<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.png" alt="dream"></picture>
-									</div>
-								</div>
-								<div class="dream__slide swiper-slide">
-									<div class="reviews__image">
-										<picture><source srcset="img/reviews/2.webp" type="image/webp"><img src="img/reviews/2.png" alt="dream"></picture>
-									</div>
+						<div data-watch-once data-watch class="aboutyou__text text">
+							Поэтому мы ждем тебя в гости, если:
+						</div>
+						<ul class="aboutyou__list">
+							<div class="aboutyou__item">
+								<!-- <div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div> -->
+								<div data-watch-once data-watch class="aboutyou__text aboutyou__text_left text">Ты
+									целеустремленная и готова зарабатывать
+									большие суммы</div>
+							</div>
+							<div class="aboutyou__item">
+								<!-- <div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div> -->
+								<div data-watch-once data-watch class="aboutyou__text aboutyou__text_left text">тебе от 18 до 30
+									лет</div>
+							</div>
+							<div class="aboutyou__item">
+								<!-- <div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div> -->
+								<div data-watch-once data-watch class="aboutyou__text aboutyou__text_left text">Ты ответсвенная
+									и есть желание развиваться
 								</div>
 							</div>
-							
-							<div class="dream__nav">
-								<button type="button" class="swiper-button-prev"><picture><source srcset="img/arrow-left.webp" type="image/webp"><img src="img/arrow-left.png" alt=""></picture></button>
-								<button type="button" class="swiper-button-next"><img src="img/arrow-right.png"
-										alt=""></button>
+							<div class="aboutyou__item">
+								<!-- <div class="aboutyou__icon"><picture><source srcset="img/diomond.webp" type="image/webp"><img src="img/diomond.png" alt="icon"></picture></div> -->
+								<div data-watch-once data-watch class="aboutyou__text aboutyou__text_left text">Успеешь
+									совмещать работу с учебой</div>
 							</div>
 
-						</div> -->
-						<div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
-							<div class="carousel__slide" data-src="img/reviews/1.png" data-fancybox="gallery">
-								<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.png" /></picture>
-							</div>
-							<div class="carousel__slide" data-src="img/reviews/2.png" data-fancybox="gallery">
-								<picture><source srcset="img/reviews/2.webp" type="image/webp"><img src="img/reviews/2.png" /></picture>
-							</div>
-							<div class="carousel__slide" data-src="img/reviews/3.png" data-fancybox="gallery">
-								<picture><source srcset="img/reviews/3.webp" type="image/webp"><img src="img/reviews/3.png" /></picture>
-							</div>
-							<div class="carousel__slide" data-src="img/reviews/4.png" data-fancybox="gallery">
-								<picture><source srcset="img/reviews/4.webp" type="image/webp"><img src="img/reviews/4.png" /></picture>
-							</div>
+						</ul>
+						<div class=" main__btns btns">
+							<a data-popup="#popup" class="blue-btn flicker-4" href="#">Начать зарабатывать</a>
 
 						</div>
 					</div>
 				</div>
 			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__description">
+			<section class="page__interior interior">
+				<div class="interior__container">
+					<h2 class="interior__title title">Наши интерьеры:</h2>
+					<div class="dream__iamges">
 
-					<p class="footer__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis,
-						aspernatur quisquam doloribus dolores sapiente voluptas ratione quis consequuntur fugit?</p>
-					<p class="footer__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis,
-						aspernatur quisquam doloribus dolores sapiente voluptas ratione quis consequuntur fugit?</p>
+						<div class="dream__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="dream__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="dream__slide swiper-slide">
+									<div class="dream__image">
+										<picture><source srcset="img/interior/1.webp" type="image/webp"><img src="img/interior/1.jpg" alt="dream"></picture>
+									</div>
+								</div>
+								<div class="dream__slide swiper-slide">
+									<div class="dream__image">
+										<picture><source srcset="img/interior/2.webp" type="image/webp"><img src="img/interior/2.jpg" alt="dream"></picture>
+									</div>
+								</div>
+								<div class="dream__slide swiper-slide">
+									<div class="dream__image">
+										<picture><source srcset="img/interior/3.webp" type="image/webp"><img src="img/interior/3.jpg" alt="dream"></picture>
+									</div>
+								</div>
+								<div class="dream__slide swiper-slide">
+									<div class="dream__image">
+										<picture><source srcset="img/interior/4.webp" type="image/webp"><img src="img/interior/4.jpg" alt="dream"></picture>
+									</div>
+								</div>
+								<div class="dream__slide swiper-slide">
+									<div class="dream__image">
+										<picture><source srcset="img/interior/5.webp" type="image/webp"><img src="img/interior/5.jpg" alt="dream"></picture>
+									</div>
+								</div>
+								<div class="dream__slide swiper-slide">
+									<div class="dream__image">
+										<picture><source srcset="img/interior/6.webp" type="image/webp"><img src="img/interior/6.jpg" alt="dream"></picture>
+									</div>
+								</div>
 
-					<p class="footer__text text">© 2023 Cats Paradise - Все права защищены .</p>
+							</div>
+						</div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<div class="dream__nav">
+							<button type="button" class="swiper-button-prev _icon-arrow-left"></button>
+							<button type="button" class="swiper-button-next _icon-arrow-right"></button>
+						</div>
+					</div>
 
 
 
 				</div>
-				<div class="footer__sociale">
-					<ul class="footer__list">
-						<li class="footer__item"><a href="" class="footer__link _icon-insta"></a></li>
-						<!-- <li class="footer__item"><a href="" class="footer__link _icon-git"></a></li> -->
-						<li class="footer__item"><a href="" class="footer__link _icon-mail"></a></li>
-						<li class="footer__item"><a href="" class="footer__link _icon-telegram"></a></li>
-					</ul>
+	</div>
+	</section>
+
+	<section class="page__reviews reviews">
+		<div class="reviews__container">
+			<div class="reviews__body">
+				<h2 data-watch-once data-watch class="reviews__title title">
+					Наши модели
+				</h2>
+				<div data-watch-once data-watch class="reviews__text text">Отзывы наших моделей</div>
+				<div data-watch-once data-watch class="reviews__subtitle">
+					<p>Более 4000 довольных моделей </p>
+					<p>Вот отзывы некоторых из них:</p>
 				</div>
+
+				<div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+					<div class="carousel__slide" data-src="img/reviews/1.png" data-fancybox="gallery">
+						<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.png" /></picture>
+					</div>
+					<div class="carousel__slide" data-src="img/reviews/2.png" data-fancybox="gallery">
+						<picture><source srcset="img/reviews/2.webp" type="image/webp"><img src="img/reviews/2.png" /></picture>
+					</div>
+					<div class="carousel__slide" data-src="img/reviews/3.png" data-fancybox="gallery">
+						<picture><source srcset="img/reviews/3.webp" type="image/webp"><img src="img/reviews/3.png" /></picture>
+					</div>
+					<div class="carousel__slide" data-src="img/reviews/4.png" data-fancybox="gallery">
+						<picture><source srcset="img/reviews/4.webp" type="image/webp"><img src="img/reviews/4.png" /></picture>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__description">
+
+				<p class="footer__text text">Вся информация на сайте является интеллектуальной собственностью. Любое
+					копирование, цитирование, использование любых материалов с сайта без разрешения создателя сайта запрещено.
+				</p>
+
+
+				<p class="footer__text text">© 2023 Cats Paradise - Все права защищены .</p>
+
+
 
 			</div>
-		</footer>
+			<div class="footer__sociale">
+				<ul class="footer__list">
+					<li class="footer__item"><a href="" class="footer__link _icon-insta"></a></li>
+					<!-- <li class="footer__item"><a href="" class="footer__link _icon-git"></a></li> -->
+					<li class="footer__item"><a href="" class="footer__link _icon-mail"></a></li>
+					<li class="footer__item"><a href="" class="footer__link _icon-telegram"></a></li>
+				</ul>
+			</div>
+
+		</div>
+	</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="btns">
+					<button data-close type="button" class="pink-btn popup__close ">Закрыть</button>
+				</div>
+				<div class="login">
+					<div class="login__body">
+						<div class="login__title title">
+							Заказать звонок
+						</div>
+						<div class="login__text text">
+							Оставьте ваш номер и мы обязательно с вами свяжемся
+						</div>
+						<form class="form login__form" action="#">
+							<div class="form__line login__form-line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="input login__input">
+								<input autocomplete="off" type="number" name="form[]" data-required="number" data-error="Введен не верный номер" placeholder="Номер телефона" class="input login__input">
+							</div>
+							<div class="btns">
+								<button type="submit" class="button login__button pink-btn">Отправить</button>
+							</div>
+						</form>
+						<div class="login__text text">
+							Или позвоните нам прямо сейчас:
+						</div>
+						<div class=" main__btns btns">
+							<a class="blue-btn flicker-4" href="#">+7(900)-000-00-00</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230420184535"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js?_v=20230420184535"></script> -->
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230425155828"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js?_v=20230425155828"></script> -->
 
 
-	<script src="js/app.min.js?_v=20230420184535"></script>
+	<script src="js/app.min.js?_v=20230425155828"></script>
 </body>
 
 </html>
